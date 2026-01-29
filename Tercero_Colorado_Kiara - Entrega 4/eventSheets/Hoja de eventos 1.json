@@ -1,0 +1,1237 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 989160806399485
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "34Correcto",
+					"sid": 263950495280708
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 513753559915777,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 723223536338239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "01PLACA_BASE",
+					"sid": 252363416028340
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "01PLACA_BASE",
+					"sid": 568541503870268,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 330101380942297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 442368180783225,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "25TextoPlacaBase",
+					"sid": 928664219575448,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 190602215991922,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 516243950840200,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 156422043896284,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "01PLACA_BASE",
+					"sid": 882748089347318,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "25TextoPlacaBase",
+					"sid": 387383953704606,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 387522382679257
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "01PLACA_BASE",
+					"sid": 511432791167723,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 109277636120251,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "01PLACA_BASE",
+							"sid": 244984261154481,
+							"parameters": {
+								"object": "07CuadroPlacaBase2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "01PLACA_BASE",
+							"sid": 568851578420909,
+							"parameters": {
+								"object": "07CuadroPlacaBase2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "01PLACA_BASE",
+							"sid": 167530620181312,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "07CuadroPlacaBase2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "01PLACA_BASE",
+							"sid": 390107336932436,
+							"parameters": {
+								"width": "169.521774",
+								"height": "217.17684"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "19SelecPlacabase",
+							"sid": 670798355028720,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 791330178546377,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 366812105834148,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 228180875989617
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 752881914409504
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "01PLACA_BASE",
+							"sid": 555245136996782,
+							"parameters": {
+								"x": "705",
+								"y": "220"
+							}
+						}
+					],
+					"sid": 976073693087111
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "02CPU",
+					"sid": 668412377064135
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "02CPU",
+					"sid": 537035540561000,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 135864435814389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 782518390034273,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "26TextoCPU",
+					"sid": 381782285819430,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 129635067984431,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 576605909861862,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 138005106584573,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "02CPU",
+					"sid": 558978222991763,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "26TextoCPU",
+					"sid": 969343335280483,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 397044149826838
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "02CPU",
+					"sid": 157771052114745,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 215524607025641,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "02CPU",
+							"sid": 511156271091688,
+							"parameters": {
+								"object": "08CuadroCPU2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "02CPU",
+							"sid": 139855278024590,
+							"parameters": {
+								"object": "08CuadroCPU2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "02CPU",
+							"sid": 953011912610812,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "08CuadroCPU2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "02CPU",
+							"sid": 821671438394784,
+							"parameters": {
+								"width": "24",
+								"height": "41"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "20SelecCPU",
+							"sid": 744972279222574,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 160925885919346,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 563828828506989,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 867328286384713
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 938954465438694
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "02CPU",
+							"sid": 213165155119059,
+							"parameters": {
+								"x": "80",
+								"y": "67"
+							}
+						}
+					],
+					"sid": 130598783457088
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "03GRÁFICA",
+					"sid": 251324159334911
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "03GRÁFICA",
+					"sid": 786867975705929,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 306612923705060
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 543198735008471,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "27TextoGráfica",
+					"sid": 648628324375331,
+					"parameters": {
+						"text": "\"Grafica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 454775413538713,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 530000821217153,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 391732026466559,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "03GRÁFICA",
+					"sid": 290387738703793,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "27TextoGráfica",
+					"sid": 484460724589869,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 749461964171140
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "03GRÁFICA",
+					"sid": 657460554129682,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 869275693754300,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "03GRÁFICA",
+							"sid": 530734157691395,
+							"parameters": {
+								"object": "09CuadroGrafica2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "03GRÁFICA",
+							"sid": 828578377200431,
+							"parameters": {
+								"object": "09CuadroGrafica2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "03GRÁFICA",
+							"sid": 776420926562446,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "09CuadroGrafica2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "03GRÁFICA",
+							"sid": 693079006899343,
+							"parameters": {
+								"width": "136",
+								"height": "41"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "21SelecGráfica",
+							"sid": 403643732869594,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 298280729196709,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 881571305034989,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 862690085469947
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 219960799797509
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "03GRÁFICA",
+							"sid": 296394299668020,
+							"parameters": {
+								"x": "160",
+								"y": "208"
+							}
+						}
+					],
+					"sid": 828066648411844
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "04RAM",
+					"sid": 599117281616096
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "04RAM",
+					"sid": 523417624617149,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 315683921319148
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 707254076817395,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "28TextoRAM",
+					"sid": 767947914772983,
+					"parameters": {
+						"text": "\"RAM\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 120376373968503,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 136194315543940,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "04RAM",
+					"sid": 123676524932158,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "28TextoRAM",
+					"sid": 137593801831565,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 931627418042145,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 717830101722763
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "04RAM",
+					"sid": 685479023788289,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 297016451640637,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "04RAM",
+							"sid": 372230317788295,
+							"parameters": {
+								"object": "10CuadroRAM2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "04RAM",
+							"sid": 342831593848987,
+							"parameters": {
+								"object": "10CuadroRAM2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "04RAM",
+							"sid": 425254945646699,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "10CuadroRAM2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "04RAM",
+							"sid": 930518821417984,
+							"parameters": {
+								"width": "38",
+								"height": "98"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "22SelecRAM",
+							"sid": 830232808304581,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 908810010490824,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 780230013479547,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 995087726663927
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 250415403146905
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "04RAM",
+							"sid": 323384650179828,
+							"parameters": {
+								"x": "807",
+								"y": "379"
+							}
+						}
+					],
+					"sid": 712030044808914
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "05VENTILADOR",
+					"sid": 235189547171955
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "05VENTILADOR",
+					"sid": 605143449581448,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 831054193699957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 476323822820341,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "29TextoVentilador",
+					"sid": 295584344674554,
+					"parameters": {
+						"text": "\"Ventilador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 824945089396644,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 695936488404922,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 989121542912266,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "05VENTILADOR",
+					"sid": 429467061953713,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "29TextoVentilador",
+					"sid": 402228646523390,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 741860808517119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "05VENTILADOR",
+					"sid": 965948091591855,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 447500863346140,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "05VENTILADOR",
+							"sid": 500275478776915,
+							"parameters": {
+								"object": "11CuadroVENTILADOR2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "05VENTILADOR",
+							"sid": 410518069211484,
+							"parameters": {
+								"object": "11CuadroVENTILADOR2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "05VENTILADOR",
+							"sid": 460113479688598,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "11CuadroVENTILADOR2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "05VENTILADOR",
+							"sid": 453140508463190,
+							"parameters": {
+								"width": "70.544481",
+								"height": "69.924398"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "23SelecVentilador",
+							"sid": 378919787186775,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 151338522611202,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 539511460534221,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 818127453262929
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 642890953991664
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "05VENTILADOR",
+							"sid": 820145264219195,
+							"parameters": {
+								"x": "754",
+								"y": "69"
+							}
+						}
+					],
+					"sid": 192167786584813
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "06ALIMENTACION",
+					"sid": 816806661762044
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "06ALIMENTACION",
+					"sid": 157897327895457,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 771636710143813
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "38Teclado",
+					"sid": 123962506450627,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "30TextoAlimentación",
+					"sid": 803614778738911,
+					"parameters": {
+						"text": "\"Fuente de alimentacion\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 612368242068196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 712395431098392,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "34Correcto",
+					"sid": 826051368694628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "06ALIMENTACION",
+					"sid": 873736271099492,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "30TextoAlimentación",
+					"sid": 176012321537562,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 552109641759017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "06ALIMENTACION",
+					"sid": 837803816415303,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 286709922436036,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "06ALIMENTACION",
+							"sid": 217603421658527,
+							"parameters": {
+								"object": "12CuadroAlimentacion2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "06ALIMENTACION",
+							"sid": 394919555014365,
+							"parameters": {
+								"object": "12CuadroAlimentacion2",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "06ALIMENTACION",
+							"sid": 784020512243824,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "12CuadroAlimentacion2",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "06ALIMENTACION",
+							"sid": 657255663352585,
+							"parameters": {
+								"width": "119",
+								"height": "64"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "24SelecAlimentación",
+							"sid": 353033407163909,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 306562961965300,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "10"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "33puntos",
+							"sid": 632542928796968,
+							"parameters": {
+								"text": "Puntos"
+							}
+						}
+					],
+					"sid": 871693175117006
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 749054890600054
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "06ALIMENTACION",
+							"sid": 410710958950605,
+							"parameters": {
+								"x": "95",
+								"y": "348"
+							}
+						}
+					],
+					"sid": 627075623243266
+				}
+			]
+		}
+	],
+	"sid": 186915468965485
+}
