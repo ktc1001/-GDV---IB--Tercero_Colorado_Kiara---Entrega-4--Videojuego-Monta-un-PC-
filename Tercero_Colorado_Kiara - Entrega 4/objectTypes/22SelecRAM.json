@@ -1,7 +1,7 @@
 {
 	"name": "22SelecRAM",
 	"plugin-id": "Sprite",
-	"sid": 643441951335715,
+	"sid": 895864339428875,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8794649,
+						"imageSpriteId": 4535163,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 394684857899426,
+				"sid": 156804363946392,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

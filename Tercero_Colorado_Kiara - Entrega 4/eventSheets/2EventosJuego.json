@@ -2,25 +2,35 @@
 	"name": "2EventosJuego",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Puntos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 620030230481544
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-created",
 					"objectClass": "34Correcto",
-					"sid": 916886149839601
+					"sid": 175446907277518
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 828671549847270,
+					"sid": 562831886012600,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 155469883129032
+			"sid": 398902938507688
 		},
 		{
 			"eventType": "block",
@@ -28,21 +38,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "01PLACA_BASE",
-					"sid": 836877903739683
+					"sid": 838853198930448
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "01PLACA_BASE",
-					"sid": 147890032591564,
+					"sid": 531012822364248,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 336503140487341
+			"sid": 966123069385889
 		},
 		{
 			"eventType": "block",
@@ -50,7 +60,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 661119382790932,
+					"sid": 664728412866929,
 					"parameters": {
 						"key": 13
 					}
@@ -58,7 +68,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "25TextoPlacaBase",
-					"sid": 235032225177273,
+					"sid": 788752821768804,
 					"parameters": {
 						"text": "\"Placa base\"",
 						"case": "case-insensitive"
@@ -67,9 +77,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 965632414817099,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 770364536302498,
+					"sid": 721791416601230,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -77,7 +101,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 384013495744199,
+					"sid": 540232056897559,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -86,7 +110,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 323685498144166,
+					"sid": 803612728981873,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -94,7 +118,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "01PLACA_BASE",
-					"sid": 121920921902641,
+					"sid": 436382079737179,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -103,13 +127,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "25TextoPlacaBase",
-					"sid": 101719987193805,
+					"sid": 480272714115840,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 149387920118650
+			"sid": 588233366803203
 		},
 		{
 			"eventType": "block",
@@ -117,12 +141,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "01PLACA_BASE",
-					"sid": 467188959992928,
+					"sid": 803480667638334,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 153290588955292,
+			"sid": 283585383970029,
 			"children": [
 				{
 					"eventType": "block",
@@ -130,7 +154,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "01PLACA_BASE",
-							"sid": 877300141505216,
+							"sid": 838861599370882,
 							"parameters": {
 								"object": "07CuadroPlacaBase2"
 							}
@@ -140,7 +164,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "01PLACA_BASE",
-							"sid": 809190115243978,
+							"sid": 661541526322434,
 							"parameters": {
 								"object": "07CuadroPlacaBase2",
 								"image-point-optional": "0"
@@ -149,7 +173,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "01PLACA_BASE",
-							"sid": 668722212100304,
+							"sid": 234109591255054,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "07CuadroPlacaBase2",
@@ -164,16 +188,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "01PLACA_BASE",
-							"sid": 265870116688068,
+							"sid": 739118148787564,
 							"parameters": {
 								"width": "169.521774",
 								"height": "217.17684"
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 487675549661710,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "19SelecPlacabase",
-							"sid": 693446558536221,
+							"sid": 698456369368823,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -181,7 +219,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 284036354639263,
+							"sid": 265082544295505,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -190,13 +228,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 801224763738870,
+							"sid": 929471309465754,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 972339089801965
+					"sid": 994302834160260
 				},
 				{
 					"eventType": "block",
@@ -204,21 +242,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 936195926485725
+							"sid": 189751021270904
 						}
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 782965127226532,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "01PLACA_BASE",
-							"sid": 530172143373299,
+							"sid": 352977343944274,
 							"parameters": {
 								"x": "705",
 								"y": "220"
 							}
 						}
 					],
-					"sid": 886926109699664
+					"sid": 771656695861525
 				}
 			]
 		},
@@ -228,21 +280,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "02CPU",
-					"sid": 276137102272931
+					"sid": 728830623675684
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "02CPU",
-					"sid": 911113203472201,
+					"sid": 508433856067161,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 798180350231734
+			"sid": 537390260044217
 		},
 		{
 			"eventType": "block",
@@ -250,7 +302,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 333263259835114,
+					"sid": 149915303132351,
 					"parameters": {
 						"key": 13
 					}
@@ -258,7 +310,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "26TextoCPU",
-					"sid": 186348168352361,
+					"sid": 178292855419651,
 					"parameters": {
 						"text": "\"CPU\"",
 						"case": "case-insensitive"
@@ -267,9 +319,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 295831785060397,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 533273457614980,
+					"sid": 895787797958000,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -277,7 +343,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 387665175153608,
+					"sid": 338016698396607,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -286,7 +352,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 829535757014314,
+					"sid": 429764849278711,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -294,7 +360,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "02CPU",
-					"sid": 100402769799376,
+					"sid": 144000796118753,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -303,13 +369,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "26TextoCPU",
-					"sid": 438319276450771,
+					"sid": 167260979797250,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 950668353753322
+			"sid": 100167461087893
 		},
 		{
 			"eventType": "block",
@@ -317,12 +383,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "02CPU",
-					"sid": 181248810712939,
+					"sid": 124684904549272,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 996428630882958,
+			"sid": 176921628715815,
 			"children": [
 				{
 					"eventType": "block",
@@ -330,7 +396,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "02CPU",
-							"sid": 602480409792216,
+							"sid": 614331140230827,
 							"parameters": {
 								"object": "08CuadroCPU2"
 							}
@@ -340,7 +406,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "02CPU",
-							"sid": 871938190407999,
+							"sid": 112639694068843,
 							"parameters": {
 								"object": "08CuadroCPU2",
 								"image-point-optional": "0"
@@ -349,7 +415,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "02CPU",
-							"sid": 275531225376727,
+							"sid": 634782890811297,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "08CuadroCPU2",
@@ -364,16 +430,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "02CPU",
-							"sid": 494754985586533,
+							"sid": 800659583794060,
 							"parameters": {
 								"width": "24",
 								"height": "41"
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 858357415185540,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "20SelecCPU",
-							"sid": 335368088768499,
+							"sid": 455289368250554,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -381,7 +461,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 395387492691285,
+							"sid": 916041195859307,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -390,13 +470,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 927163005107801,
+							"sid": 800953446348075,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 351989126474739
+					"sid": 561450541192934
 				},
 				{
 					"eventType": "block",
@@ -404,21 +484,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 632794130988968
+							"sid": 234470647590445
 						}
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 282225030748243,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "02CPU",
-							"sid": 748030923091154,
+							"sid": 741748326765107,
 							"parameters": {
 								"x": "80",
 								"y": "67"
 							}
 						}
 					],
-					"sid": 318225628209393
+					"sid": 522604985020080
 				}
 			]
 		},
@@ -428,21 +522,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "03GRÁFICA",
-					"sid": 640893666747681
+					"sid": 512568195889150
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "03GRÁFICA",
-					"sid": 930842903908011,
+					"sid": 738113616387014,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 277294119141933
+			"sid": 248416039601949
 		},
 		{
 			"eventType": "block",
@@ -450,7 +544,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 412793551100945,
+					"sid": 866562358443250,
 					"parameters": {
 						"key": 13
 					}
@@ -458,7 +552,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "27TextoGráfica",
-					"sid": 357901338969039,
+					"sid": 840674115797023,
 					"parameters": {
 						"text": "\"Grafica\"",
 						"case": "case-insensitive"
@@ -467,9 +561,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 473648236820164,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 777960287560788,
+					"sid": 725617264074528,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -477,7 +585,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 559906844722948,
+					"sid": 369118892525365,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -486,7 +594,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 400122957075655,
+					"sid": 922730934298297,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -494,7 +602,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "03GRÁFICA",
-					"sid": 313250218349396,
+					"sid": 978691741729720,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -503,13 +611,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "27TextoGráfica",
-					"sid": 288509812051570,
+					"sid": 964734717537561,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 582495589558193
+			"sid": 944117956435553
 		},
 		{
 			"eventType": "block",
@@ -517,12 +625,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "03GRÁFICA",
-					"sid": 492150161424254,
+					"sid": 250329671250608,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 832107129856428,
+			"sid": 556092608078936,
 			"children": [
 				{
 					"eventType": "block",
@@ -530,7 +638,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "03GRÁFICA",
-							"sid": 558154227866870,
+							"sid": 654758205165167,
 							"parameters": {
 								"object": "09CuadroGrafica2"
 							}
@@ -540,7 +648,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "03GRÁFICA",
-							"sid": 194675960224933,
+							"sid": 195168845299194,
 							"parameters": {
 								"object": "09CuadroGrafica2",
 								"image-point-optional": "0"
@@ -549,7 +657,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "03GRÁFICA",
-							"sid": 132966370079084,
+							"sid": 944996006679452,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "09CuadroGrafica2",
@@ -564,16 +672,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "03GRÁFICA",
-							"sid": 491331844732615,
+							"sid": 900867785890039,
 							"parameters": {
 								"width": "136",
 								"height": "41"
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 532236418233895,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "21SelecGráfica",
-							"sid": 548988045477357,
+							"sid": 441924826272657,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -581,7 +703,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 789079411243115,
+							"sid": 611420701799841,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -590,13 +712,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 196844503489947,
+							"sid": 303084566881831,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 521081237595539
+					"sid": 193982300728882
 				},
 				{
 					"eventType": "block",
@@ -604,21 +726,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 698636952935552
+							"sid": 577172064394217
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "03GRÁFICA",
-							"sid": 126945807130716,
+							"sid": 949766241326869,
 							"parameters": {
 								"x": "160",
 								"y": "208"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 408589537935015,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
-					"sid": 386774982410793
+					"sid": 683546196271633
 				}
 			]
 		},
@@ -628,21 +764,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "04RAM",
-					"sid": 128790797815244
+					"sid": 805773224292512
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "04RAM",
-					"sid": 595024596677765,
+					"sid": 726960963169826,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 367003889198288
+			"sid": 833398647332508
 		},
 		{
 			"eventType": "block",
@@ -650,7 +786,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 482622739975174,
+					"sid": 810563874546815,
 					"parameters": {
 						"key": 13
 					}
@@ -658,7 +794,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "28TextoRAM",
-					"sid": 969368009525354,
+					"sid": 731929968616751,
 					"parameters": {
 						"text": "\"RAM\"",
 						"case": "case-insensitive"
@@ -667,9 +803,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 697225878569683,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 746407466523944,
+					"sid": 446732010014153,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -677,7 +827,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 759387396879191,
+					"sid": 145901403104675,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -686,7 +836,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "04RAM",
-					"sid": 644291975646595,
+					"sid": 715378604803207,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -695,7 +845,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "28TextoRAM",
-					"sid": 207469456654290,
+					"sid": 625112221131600,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -703,13 +853,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 535193047148928,
+					"sid": 601559288032547,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 605733556481126
+			"sid": 553876657989999
 		},
 		{
 			"eventType": "block",
@@ -717,12 +867,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "04RAM",
-					"sid": 424433573727555,
+					"sid": 155493856800202,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 595075610692433,
+			"sid": 656914377380216,
 			"children": [
 				{
 					"eventType": "block",
@@ -730,7 +880,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "04RAM",
-							"sid": 559927547927996,
+							"sid": 665291300435508,
 							"parameters": {
 								"object": "10CuadroRAM2"
 							}
@@ -740,7 +890,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "04RAM",
-							"sid": 421774984110616,
+							"sid": 849176832951128,
 							"parameters": {
 								"object": "10CuadroRAM2",
 								"image-point-optional": "0"
@@ -749,7 +899,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "04RAM",
-							"sid": 514924329581469,
+							"sid": 750807953545331,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "10CuadroRAM2",
@@ -764,16 +914,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "04RAM",
-							"sid": 330035931251505,
+							"sid": 284387861466786,
 							"parameters": {
-								"width": "38",
-								"height": "98"
+								"width": "101",
+								"height": "29"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 364378326292140,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
 							"id": "set-visible",
 							"objectClass": "22SelecRAM",
-							"sid": 118569746382938,
+							"sid": 825549599137039,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -781,7 +945,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 200441780187656,
+							"sid": 431286841470001,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -790,13 +954,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 349458944854827,
+							"sid": 287557796320872,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 500430508653416
+					"sid": 567282414451486
 				},
 				{
 					"eventType": "block",
@@ -804,21 +968,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 870825617797528
+							"sid": 158562162156184
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "04RAM",
-							"sid": 848645718814248,
+							"sid": 436451834980420,
 							"parameters": {
 								"x": "807",
 								"y": "379"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 272073978676792,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
-					"sid": 603618495835316
+					"sid": 512069134737265
 				}
 			]
 		},
@@ -828,21 +1006,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "05VENTILADOR",
-					"sid": 397917140243223
+					"sid": 208157671298873
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "05VENTILADOR",
-					"sid": 874384846575697,
+					"sid": 294456593427845,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 308633569807970
+			"sid": 194046986134208
 		},
 		{
 			"eventType": "block",
@@ -850,7 +1028,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 989915924986586,
+					"sid": 363741416840481,
 					"parameters": {
 						"key": 13
 					}
@@ -858,7 +1036,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "29TextoVentilador",
-					"sid": 637697017711010,
+					"sid": 443010040507022,
 					"parameters": {
 						"text": "\"Ventilador\"",
 						"case": "case-insensitive"
@@ -867,9 +1045,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 366625236729476,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 234688775259949,
+					"sid": 465426499450546,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -877,7 +1069,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 960314431869676,
+					"sid": 603662504097229,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -886,7 +1078,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 751117012849726,
+					"sid": 459634257792616,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -894,7 +1086,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "05VENTILADOR",
-					"sid": 598292821717394,
+					"sid": 720135835692251,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -903,13 +1095,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "29TextoVentilador",
-					"sid": 962364001515673,
+					"sid": 685063180467477,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 445615876049479
+			"sid": 924678269051345
 		},
 		{
 			"eventType": "block",
@@ -917,12 +1109,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "05VENTILADOR",
-					"sid": 587707491199515,
+					"sid": 377783406967605,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 779109590841643,
+			"sid": 991443508852699,
 			"children": [
 				{
 					"eventType": "block",
@@ -930,7 +1122,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "05VENTILADOR",
-							"sid": 659948792943352,
+							"sid": 491604680901712,
 							"parameters": {
 								"object": "11CuadroVENTILADOR2"
 							}
@@ -940,7 +1132,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "05VENTILADOR",
-							"sid": 523317988823660,
+							"sid": 426082976557676,
 							"parameters": {
 								"object": "11CuadroVENTILADOR2",
 								"image-point-optional": "0"
@@ -949,7 +1141,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "05VENTILADOR",
-							"sid": 345445036729757,
+							"sid": 474649992328957,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "11CuadroVENTILADOR2",
@@ -964,16 +1156,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "05VENTILADOR",
-							"sid": 201012486981590,
+							"sid": 966979037255893,
 							"parameters": {
 								"width": "70.544481",
 								"height": "69.924398"
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 465526826093385,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "23SelecVentilador",
-							"sid": 162912430060531,
+							"sid": 459039355129399,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -981,7 +1187,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 335545679310170,
+							"sid": 289597137870305,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -990,13 +1196,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 384247436418460,
+							"sid": 753905617250446,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 106791471737165
+					"sid": 343264481787363
 				},
 				{
 					"eventType": "block",
@@ -1004,21 +1210,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 362792761190824
+							"sid": 964216162252665
 						}
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 351117760622816,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "05VENTILADOR",
-							"sid": 697137169750111,
+							"sid": 626989912411964,
 							"parameters": {
 								"x": "754",
 								"y": "69"
 							}
 						}
 					],
-					"sid": 793838958463602
+					"sid": 744953011600279
 				}
 			]
 		},
@@ -1028,21 +1248,21 @@
 				{
 					"id": "on-created",
 					"objectClass": "06ALIMENTACION",
-					"sid": 325593304729657
+					"sid": 228647483742432
 				}
 			],
 			"actions": [
 				{
 					"id": "set-enabled",
 					"objectClass": "06ALIMENTACION",
-					"sid": 535594190835495,
+					"sid": 175057877403525,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "disabled"
 					}
 				}
 			],
-			"sid": 309921488808777
+			"sid": 423315516235430
 		},
 		{
 			"eventType": "block",
@@ -1050,7 +1270,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "38Teclado",
-					"sid": 664431917349840,
+					"sid": 275811546586303,
 					"parameters": {
 						"key": 13
 					}
@@ -1058,7 +1278,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "30TextoAlimentación",
-					"sid": 588646833359751,
+					"sid": 955925488228124,
 					"parameters": {
 						"text": "\"Fuente de alimentacion\"",
 						"case": "case-insensitive"
@@ -1067,9 +1287,23 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 848865510874116,
+					"parameters": {
+						"audio-file": {
+							"path": "correct-choice-43861"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 216329783531280,
+					"sid": 173034379357215,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -1077,7 +1311,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 320459217237122,
+					"sid": 748314677484036,
 					"parameters": {
 						"seconds": "1.0",
 						"use-timescale": true
@@ -1086,7 +1320,7 @@
 				{
 					"id": "set-visible",
 					"objectClass": "34Correcto",
-					"sid": 256026387120785,
+					"sid": 322956090274989,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -1094,7 +1328,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "06ALIMENTACION",
-					"sid": 487325467067117,
+					"sid": 614074988372682,
 					"behaviorType": "ArrastrarYSoltar",
 					"parameters": {
 						"state": "enabled"
@@ -1103,13 +1337,13 @@
 				{
 					"id": "set-visible",
 					"objectClass": "30TextoAlimentación",
-					"sid": 737176289597385,
+					"sid": 122501090041312,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 649755575934247
+			"sid": 129151814318963
 		},
 		{
 			"eventType": "block",
@@ -1117,12 +1351,12 @@
 				{
 					"id": "on-drop",
 					"objectClass": "06ALIMENTACION",
-					"sid": 634831480395665,
+					"sid": 662397687264655,
 					"behaviorType": "ArrastrarYSoltar"
 				}
 			],
 			"actions": [],
-			"sid": 945690355166546,
+			"sid": 990038903264788,
 			"children": [
 				{
 					"eventType": "block",
@@ -1130,7 +1364,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "06ALIMENTACION",
-							"sid": 483413756899689,
+							"sid": 161937582181303,
 							"parameters": {
 								"object": "12CuadroAlimentacion2"
 							}
@@ -1140,7 +1374,7 @@
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "06ALIMENTACION",
-							"sid": 428816402086188,
+							"sid": 339172028457352,
 							"parameters": {
 								"object": "12CuadroAlimentacion2",
 								"image-point-optional": "0"
@@ -1149,7 +1383,7 @@
 						{
 							"id": "pin-to-object-properties",
 							"objectClass": "06ALIMENTACION",
-							"sid": 548298805041734,
+							"sid": 589763924957943,
 							"behaviorType": "Pegado",
 							"parameters": {
 								"pin-to": "12CuadroAlimentacion2",
@@ -1164,16 +1398,30 @@
 						{
 							"id": "set-size",
 							"objectClass": "06ALIMENTACION",
-							"sid": 510747256713681,
+							"sid": 499528351683033,
 							"parameters": {
 								"width": "119",
 								"height": "64"
 							}
 						},
 						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 482007413807722,
+							"parameters": {
+								"audio-file": {
+									"path": "correct-choice-43861"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "24SelecAlimentación",
-							"sid": 301200759302946,
+							"sid": 780717041487189,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -1181,7 +1429,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 307413864187190,
+							"sid": 857960447028230,
 							"parameters": {
 								"variable": "Puntos",
 								"value": "10"
@@ -1190,13 +1438,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "33puntos",
-							"sid": 897338135138879,
+							"sid": 921211432504153,
 							"parameters": {
 								"text": "Puntos"
 							}
 						}
 					],
-					"sid": 228415614450278
+					"sid": 855024566924211
 				},
 				{
 					"eventType": "block",
@@ -1204,21 +1452,35 @@
 						{
 							"id": "else",
 							"objectClass": "System",
-							"sid": 180259725639292
+							"sid": 937130038630502
 						}
 					],
 					"actions": [
 						{
 							"id": "set-position",
 							"objectClass": "06ALIMENTACION",
-							"sid": 759515878306915,
+							"sid": 473991920656716,
 							"parameters": {
 								"x": "95",
 								"y": "348"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "39Audio",
+							"sid": 719562357306045,
+							"parameters": {
+								"audio-file": {
+									"path": "training-program-incorrect2-88735"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
-					"sid": 827251229979158
+					"sid": 156350414680747
 				}
 			]
 		},
@@ -1228,7 +1490,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 739283466277468,
+					"sid": 625084395703841,
 					"parameters": {
 						"variable": "Puntos",
 						"comparison": 0,
@@ -1240,14 +1502,14 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 475010161755906,
+					"sid": 346980872745244,
 					"parameters": {
-						"layout": "3PantallaFin"
+						"layout": "3PantallaFinal"
 					}
 				}
 			],
-			"sid": 172432620565322
+			"sid": 408511015022280
 		}
 	],
-	"sid": 734863996568278
+	"sid": 807192938354399
 }

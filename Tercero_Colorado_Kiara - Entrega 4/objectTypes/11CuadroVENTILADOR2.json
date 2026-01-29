@@ -1,7 +1,7 @@
 {
 	"name": "11CuadroVENTILADOR2",
 	"plugin-id": "Sprite",
-	"sid": 816692973685117,
+	"sid": 505885637537230,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5754793,
+						"imageSpriteId": 5075011,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 769114128862708,
+				"sid": 211889194954415,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

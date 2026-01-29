@@ -1,7 +1,7 @@
 {
 	"name": "24SelecAlimentación",
 	"plugin-id": "Sprite",
-	"sid": 277811971031701,
+	"sid": 912528652474802,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7901726,
+						"imageSpriteId": 533451,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 871833522680421,
+				"sid": 875999985111752,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

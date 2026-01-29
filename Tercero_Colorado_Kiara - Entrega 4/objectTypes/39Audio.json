@@ -1,7 +1,7 @@
 {
 	"name": "39Audio",
 	"plugin-id": "Audio",
-	"sid": 218794987051366,
+	"sid": 759345237826617,
 	"singleglobal-inst": {
 		"type": "39Audio",
 		"properties": {
@@ -17,8 +17,8 @@
 			"maximum-distance": 10000,
 			"roll-off-factor": 1
 		},
-		"uid": 47,
-		"sid": 202908391445427,
+		"uid": 27,
+		"sid": 483853351555766,
 		"tags": ""
 	}
 }

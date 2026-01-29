@@ -1,7 +1,7 @@
 {
 	"name": "Start",
 	"plugin-id": "Sprite",
-	"sid": 675710768911859,
+	"sid": 420507626505876,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/jpeg",
-						"imageSpriteId": 8806923,
+						"imageSpriteId": 2987100,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 332430036700563,
+				"sid": 494736771937623,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

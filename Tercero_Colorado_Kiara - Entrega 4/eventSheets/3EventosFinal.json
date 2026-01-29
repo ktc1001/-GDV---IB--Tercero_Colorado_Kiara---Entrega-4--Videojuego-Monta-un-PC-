@@ -1,0 +1,101 @@
+{
+	"name": "3EventosFinal",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "37Mouse",
+					"sid": 539415106768464,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Recargar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 384299328487844,
+					"parameters": {
+						"layout": "2JUEGO INFORMÁTICA"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "39Audio",
+					"sid": 850860898303914,
+					"parameters": {
+						"audio-file": {
+							"path": "button-ui-sound-effect-395762"
+						},
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 674720135479594,
+					"parameters": {
+						"variable": "Puntos"
+					}
+				}
+			],
+			"sid": 692638320971758
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "37Mouse",
+					"sid": 856149086659707,
+					"parameters": {
+						"object": "Recargar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Recargar",
+					"sid": 337762147592765,
+					"parameters": {
+						"width": "115",
+						"height": "115"
+					}
+				}
+			],
+			"sid": 748355870345722
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 646575787972082
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Recargar",
+					"sid": 949181282094840,
+					"parameters": {
+						"width": "120.902745",
+						"height": " 120.902745"
+					}
+				}
+			],
+			"sid": 986517122504743
+		}
+	],
+	"sid": 108591897390399
+}

@@ -1,7 +1,7 @@
 {
 	"name": "23SelecVentilador",
 	"plugin-id": "Sprite",
-	"sid": 507872571852659,
+	"sid": 859430393786880,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5547641,
+						"imageSpriteId": 4836329,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 295838288848756,
+				"sid": 246587114896216,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

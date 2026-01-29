@@ -1,7 +1,7 @@
 {
 	"name": "07CuadroPlacaBase2",
 	"plugin-id": "Sprite",
-	"sid": 648002816216711,
+	"sid": 698332805255403,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2722935,
+						"imageSpriteId": 6994463,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 159182734864516,
+				"sid": 572457504249431,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

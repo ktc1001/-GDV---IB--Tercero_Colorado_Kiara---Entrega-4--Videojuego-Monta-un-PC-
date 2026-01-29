@@ -1,7 +1,7 @@
 {
 	"name": "20SelecCPU",
 	"plugin-id": "Sprite",
-	"sid": 474807420244438,
+	"sid": 228738179337334,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9292612,
+						"imageSpriteId": 6510595,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 809319377577754,
+				"sid": 838752570105394,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
