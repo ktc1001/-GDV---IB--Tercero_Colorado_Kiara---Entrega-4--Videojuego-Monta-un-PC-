@@ -1,7 +1,7 @@
 {
 	"name": "12CuadroAlimentacion2",
 	"plugin-id": "Sprite",
-	"sid": 857958164493227,
+	"sid": 478380122894504,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6025698,
+						"imageSpriteId": 5925798,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 938472471477149,
+				"sid": 278289185146255,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

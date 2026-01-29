@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 46602,
-	"name": "1SIN PANTALLAS",
+	"name": "2SIN AUDIO",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -70,7 +70,7 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "2zqn4mwqimn",
+	"uniqueId": "76fjd33ghy2",
 	"objectTypes": {
 		"items": [
 			"Sprite2",
@@ -103,8 +103,16 @@
 			"04RAM",
 			"03GRÁFICA",
 			"02CPU",
-			"38Teclado",
+			"Sprite",
+			"Start",
+			"Texto",
+			"Texto2",
+			"Texto3",
+			"Texto4",
+			"Texto5",
+			"Recargar",
 			"37Mouse",
+			"38Teclado",
 			"39Audio"
 		],
 		"subfolders": []
@@ -118,13 +126,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1"
+			"1PantallaInicio",
+			"2JUEGO INFORMÁTICA",
+			"3PantallaFin"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Hoja de eventos 1"
+			"1EventosInicio",
+			"2EventosJuego",
+			"3EventosFIn"
 		],
 		"subfolders": []
 	},
@@ -134,7 +146,32 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "button-ui-sound-effect-395762.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 338117735777000,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "training-program-incorrect2-88735.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 368337495786903,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "correct-choice-43861.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 214709336109150,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
@@ -154,7 +191,7 @@
 				{
 					"name": "icono-16.png",
 					"type": "image/png",
-					"sid": 926202759724640,
+					"sid": 183140047235708,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -162,7 +199,7 @@
 				{
 					"name": "icono-32.png",
 					"type": "image/png",
-					"sid": 968298508057186,
+					"sid": 852862096548031,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -170,7 +207,7 @@
 				{
 					"name": "icono-64.png",
 					"type": "image/png",
-					"sid": 435005886304334,
+					"sid": 725212973006055,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -178,7 +215,7 @@
 				{
 					"name": "icono-128.png",
 					"type": "image/png",
-					"sid": 274724195285699,
+					"sid": 418699271610138,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -186,7 +223,7 @@
 				{
 					"name": "icono-256.png",
 					"type": "image/png",
-					"sid": 480428284729535,
+					"sid": 689631468071938,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -194,7 +231,7 @@
 				{
 					"name": "icono-512.png",
 					"type": "image/png",
-					"sid": 447315830208688,
+					"sid": 267412547598761,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -202,7 +239,7 @@
 				{
 					"name": "logo-carga.png",
 					"type": "image/png",
-					"sid": 116538128468940,
+					"sid": 467803283951630,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}

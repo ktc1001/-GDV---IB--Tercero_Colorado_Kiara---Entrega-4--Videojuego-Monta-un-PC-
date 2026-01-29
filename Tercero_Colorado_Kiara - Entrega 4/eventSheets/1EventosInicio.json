@@ -1,0 +1,79 @@
+{
+	"name": "1EventosInicio",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "37Mouse",
+					"sid": 496944140836577,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 645493086542001,
+					"parameters": {
+						"layout": "2JUEGO INFORMÁTICA"
+					}
+				}
+			],
+			"sid": 989602610708061
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "37Mouse",
+					"sid": 925112271846414,
+					"parameters": {
+						"object": "Start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Start",
+					"sid": 192185740378982,
+					"parameters": {
+						"width": "190",
+						"height": "51"
+					}
+				}
+			],
+			"sid": 886591061337768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 743245346419525
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Start",
+					"sid": 919303797301120,
+					"parameters": {
+						"width": "201.683625",
+						"height": "55.589336"
+					}
+				}
+			],
+			"sid": 618451265835851
+		}
+	],
+	"sid": 358816684236022
+}

@@ -1,12 +1,12 @@
 {
 	"name": "38Teclado",
 	"plugin-id": "Keyboard",
-	"sid": 980767408442980,
+	"sid": 735704038663384,
 	"singleglobal-inst": {
 		"type": "38Teclado",
 		"properties": {},
-		"uid": 32,
-		"sid": 338294176828260,
+		"uid": 46,
+		"sid": 524688664906255,
 		"tags": ""
 	}
 }

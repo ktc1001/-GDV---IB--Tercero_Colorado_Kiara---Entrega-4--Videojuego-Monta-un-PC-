@@ -1,7 +1,7 @@
 {
 	"name": "09CuadroGrafica2",
 	"plugin-id": "Sprite",
-	"sid": 386893444549595,
+	"sid": 332144643031576,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4154829,
+						"imageSpriteId": 7224228,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 253889659222134,
+				"sid": 946050307323797,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

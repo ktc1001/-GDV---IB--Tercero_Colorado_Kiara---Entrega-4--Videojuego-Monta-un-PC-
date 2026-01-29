@@ -1,7 +1,7 @@
 {
 	"name": "33puntos",
 	"plugin-id": "TextBox",
-	"sid": 339943011420765,
+	"sid": 386420641119214,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,7 +10,7 @@
 			"type": "number",
 			"desc": "",
 			"show": true,
-			"sid": 921705310983741
+			"sid": 209710165957435
 		}
 	],
 	"behaviorTypes": []

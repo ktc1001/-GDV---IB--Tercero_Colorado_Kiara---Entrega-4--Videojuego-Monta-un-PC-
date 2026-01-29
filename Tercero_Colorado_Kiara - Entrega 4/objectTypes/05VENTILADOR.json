@@ -1,7 +1,7 @@
 {
 	"name": "05VENTILADOR",
 	"plugin-id": "Sprite",
-	"sid": 922332326210541,
+	"sid": 421661171128546,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 286459110526361
+			"sid": 704859561264479
 		},
 		{
 			"name": "PegadoNO",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 379352523384873
+			"sid": 155312361777695
 		},
 		{
 			"name": "Verdadero",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 388730421642089
+			"sid": 496149630269667
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "ArrastrarYSoltar",
-			"sid": 135504497019265
+			"sid": 809433974867666
 		},
 		{
 			"behaviorId": "Pin",
 			"name": "Pegado",
-			"sid": 337625234089414
+			"sid": 751496576038394
 		}
 	],
 	"effectTypes": [],
@@ -53,7 +53,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4774094,
+						"imageSpriteId": 2862517,
 						"collisionPoly": {
 							"points": [
 								0.46771037181996084,
@@ -77,7 +77,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 714160329460907,
+				"sid": 904241498033087,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

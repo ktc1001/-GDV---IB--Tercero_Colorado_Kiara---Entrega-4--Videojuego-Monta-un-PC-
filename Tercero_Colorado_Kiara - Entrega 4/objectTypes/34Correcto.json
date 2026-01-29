@@ -1,7 +1,7 @@
 {
 	"name": "34Correcto",
 	"plugin-id": "Text",
-	"sid": 541775629860406,
+	"sid": 366488088709528,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "Timer",
 			"name": "Temporizador",
-			"sid": 986322166369150
+			"sid": 765156186911172
 		}
 	],
 	"effectTypes": []

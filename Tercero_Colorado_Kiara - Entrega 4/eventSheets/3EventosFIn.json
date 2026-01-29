@@ -1,0 +1,97 @@
+{
+	"name": "3EventosFIn",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 323506157091495
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "37Mouse",
+					"sid": 310787990005870,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Recargar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 505482571014090,
+					"parameters": {
+						"layout": "2JUEGO INFORMÁTICA"
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 204746140746287,
+					"parameters": {
+						"variable": "Puntos"
+					}
+				}
+			],
+			"sid": 320306051265356
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "37Mouse",
+					"sid": 614267026342879,
+					"parameters": {
+						"object": "Recargar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Recargar",
+					"sid": 476451938991968,
+					"parameters": {
+						"width": "115",
+						"height": "115"
+					}
+				}
+			],
+			"sid": 314773783685756
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 224870174923590
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "Recargar",
+					"sid": 561138712248709,
+					"parameters": {
+						"width": "120.902745",
+						"height": " 120.902745"
+					}
+				}
+			],
+			"sid": 892819598645315
+		}
+	],
+	"sid": 737557926224884
+}

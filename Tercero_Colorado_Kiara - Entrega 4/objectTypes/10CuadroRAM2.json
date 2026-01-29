@@ -1,7 +1,7 @@
 {
 	"name": "10CuadroRAM2",
 	"plugin-id": "Sprite",
-	"sid": 436707863732318,
+	"sid": 612300831850592,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1778735,
+						"imageSpriteId": 366018,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 439876642114555,
+				"sid": 486123199571360,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
