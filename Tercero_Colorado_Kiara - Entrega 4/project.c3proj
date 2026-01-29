@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 46602,
-	"name": "2SIN AUDIO",
+	"name": "Nuevo proyecto",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -70,11 +70,17 @@
 			"bundled": false
 		}
 	],
-	"uniqueId": "76fjd33ghy2",
+	"uniqueId": "j5rx4kebgq1",
 	"objectTypes": {
 		"items": [
-			"Sprite2",
-			"00CAJA1",
+			"02CPU",
+			"38Teclado",
+			"37Mouse",
+			"05VENTILADOR",
+			"03GRÁFICA",
+			"01PLACA_BASE",
+			"06ALIMENTACION",
+			"04RAM",
 			"31Título",
 			"12CuadroAlimentacion2",
 			"08CuadroCPU2",
@@ -86,34 +92,29 @@
 			"33puntos",
 			"32puntuacion",
 			"19SelecPlacabase",
-			"01PLACA_BASE",
 			"20SelecCPU",
 			"21SelecGráfica",
 			"22SelecRAM",
 			"23SelecVentilador",
 			"24SelecAlimentación",
+			"00CAJA1",
 			"25TextoPlacaBase",
 			"26TextoCPU",
 			"27TextoGráfica",
 			"28TextoRAM",
 			"29TextoVentilador",
 			"30TextoAlimentación",
-			"06ALIMENTACION",
-			"05VENTILADOR",
-			"04RAM",
-			"03GRÁFICA",
-			"02CPU",
-			"Sprite",
 			"Start",
 			"Texto",
 			"Texto2",
+			"Sprite",
 			"Texto3",
+			"Sprite2",
 			"Texto4",
 			"Texto5",
-			"Recargar",
-			"37Mouse",
-			"38Teclado",
-			"39Audio"
+			"39Audio",
+			"Texto6",
+			"Recargar"
 		],
 		"subfolders": []
 	},
@@ -126,17 +127,17 @@
 	},
 	"layouts": {
 		"items": [
-			"1PantallaInicio",
+			"1PantalladeInicio",
 			"2JUEGO INFORMÁTICA",
-			"3PantallaFin"
+			"3PantallaFinal"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"1EventosInicio",
 			"2EventosJuego",
-			"3EventosFIn"
+			"1EventosInicio",
+			"3EventosFinal"
 		],
 		"subfolders": []
 	},
@@ -148,9 +149,9 @@
 		"sound": {
 			"items": [
 				{
-					"name": "button-ui-sound-effect-395762.webm",
+					"name": "correct-choice-43861.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 338117735777000,
+					"sid": 725158570067021,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -158,15 +159,15 @@
 				{
 					"name": "training-program-incorrect2-88735.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 368337495786903,
+					"sid": 247787742040509,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "correct-choice-43861.webm",
+					"name": "button-ui-sound-effect-395762.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 214709336109150,
+					"sid": 902681562575107,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -191,7 +192,7 @@
 				{
 					"name": "icono-16.png",
 					"type": "image/png",
-					"sid": 183140047235708,
+					"sid": 143955626162931,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -199,7 +200,7 @@
 				{
 					"name": "icono-32.png",
 					"type": "image/png",
-					"sid": 852862096548031,
+					"sid": 804036562709639,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -207,7 +208,7 @@
 				{
 					"name": "icono-64.png",
 					"type": "image/png",
-					"sid": 725212973006055,
+					"sid": 772772265511930,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -215,7 +216,7 @@
 				{
 					"name": "icono-128.png",
 					"type": "image/png",
-					"sid": 418699271610138,
+					"sid": 345164167493061,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -223,7 +224,7 @@
 				{
 					"name": "icono-256.png",
 					"type": "image/png",
-					"sid": 689631468071938,
+					"sid": 573952810097651,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -231,7 +232,7 @@
 				{
 					"name": "icono-512.png",
 					"type": "image/png",
-					"sid": 267412547598761,
+					"sid": 806466244453511,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -239,7 +240,7 @@
 				{
 					"name": "logo-carga.png",
 					"type": "image/png",
-					"sid": 467803283951630,
+					"sid": 265828524038530,
 					"icon-info": {
 						"purpose": "loading-logo"
 					}
@@ -278,7 +279,7 @@
 		"authorWebsite": "",
 		"appId": "",
 		"pixelRounding": false,
-		"zAxisScale": "regular",
+		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
@@ -325,5 +326,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "1PantalladeInicio"
 }

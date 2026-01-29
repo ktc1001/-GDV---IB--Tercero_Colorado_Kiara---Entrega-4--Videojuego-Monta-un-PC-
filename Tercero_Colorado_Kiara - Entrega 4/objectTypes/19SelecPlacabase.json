@@ -1,7 +1,7 @@
 {
 	"name": "19SelecPlacabase",
 	"plugin-id": "Sprite",
-	"sid": 737588497559099,
+	"sid": 877874316172629,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8238913,
+						"imageSpriteId": 790080,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 234554580989511,
+				"sid": 128941623438486,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

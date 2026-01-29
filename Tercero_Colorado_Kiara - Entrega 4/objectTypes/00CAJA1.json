@@ -1,7 +1,7 @@
 {
 	"name": "00CAJA1",
 	"plugin-id": "Sprite",
-	"sid": 908412026859450,
+	"sid": 959858965709662,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5855674,
+						"imageSpriteId": 7819402,
 						"collisionPoly": {
 							"points": [
 								0.163125,
@@ -44,7 +44,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 413569204916306,
+				"sid": 297603932453828,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

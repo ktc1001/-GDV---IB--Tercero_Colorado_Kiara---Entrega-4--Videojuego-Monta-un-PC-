@@ -1,12 +1,12 @@
 {
 	"name": "37Mouse",
 	"plugin-id": "Mouse",
-	"sid": 369963878009350,
+	"sid": 326454696254276,
 	"singleglobal-inst": {
 		"type": "37Mouse",
 		"properties": {},
-		"uid": 45,
-		"sid": 300412023414631,
+		"uid": 5,
+		"sid": 655678349000544,
 		"tags": ""
 	}
 }

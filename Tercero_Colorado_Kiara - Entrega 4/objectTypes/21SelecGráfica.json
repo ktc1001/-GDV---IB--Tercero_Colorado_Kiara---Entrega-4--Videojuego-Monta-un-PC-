@@ -1,7 +1,7 @@
 {
 	"name": "21SelecGráfica",
 	"plugin-id": "Sprite",
-	"sid": 910825855276235,
+	"sid": 485460814458195,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7076885,
+						"imageSpriteId": 4780666,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 502620848099559,
+				"sid": 268147889029627,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

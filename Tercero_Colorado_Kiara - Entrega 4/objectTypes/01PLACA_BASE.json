@@ -1,7 +1,7 @@
 {
 	"name": "01PLACA_BASE",
 	"plugin-id": "Sprite",
-	"sid": 795905722458561,
+	"sid": 548036905198950,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
@@ -10,33 +10,33 @@
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 274726169718107
+			"sid": 583314804198983
 		},
 		{
 			"name": "PegadoNO",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 128536595863474
+			"sid": 365058287212225
 		},
 		{
 			"name": "Verdadero",
 			"type": "boolean",
 			"desc": "",
 			"show": true,
-			"sid": 968353326668654
+			"sid": 771005525522600
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "DragnDrop",
 			"name": "ArrastrarYSoltar",
-			"sid": 213075984513496
+			"sid": 802517783872153
 		},
 		{
 			"behaviorId": "Pin",
 			"name": "Pegado",
-			"sid": 267050685624850
+			"sid": 700909512456894
 		}
 	],
 	"effectTypes": [],
@@ -53,7 +53,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 199939,
+						"imageSpriteId": 7502603,
 						"collisionPoly": {
 							"points": [
 								0.16733067729083664,
@@ -75,7 +75,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 423123893116331,
+				"sid": 683653262409379,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

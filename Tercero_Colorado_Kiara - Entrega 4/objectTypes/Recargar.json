@@ -1,7 +1,7 @@
 {
 	"name": "Recargar",
 	"plugin-id": "Sprite",
-	"sid": 963937069753209,
+	"sid": 427505858672515,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7676288,
+						"imageSpriteId": 7345704,
 						"collisionPoly": {
 							"points": [
 								0.4609375,
@@ -46,7 +46,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 734048153513850,
+				"sid": 653364838256044,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
